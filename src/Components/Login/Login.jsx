@@ -1,8 +1,5 @@
 import { FaUser, FaLock } from 'react-icons/fa';
-import "./Login.css";
 import { useState } from 'react';
-
-import "./Login.css";
 
 const Login = () => {
 
@@ -16,7 +13,7 @@ const Login = () => {
     }
 
    return (
-    <div className="container">
+    <div className="container d-flex justify-content-center vh-100">
       <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
         <div className="input-field">
@@ -47,7 +44,7 @@ const Login = () => {
           </label>
           <a href="#">Esqueceu sua senha?</a>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" class="mt-3 btn btn-outline-info">Login</button>
         <div className="signup-link">
           <p>
             Não tem uma conta? <a href="#">Registar</a>{" "}
@@ -58,4 +55,4 @@ const Login = () => {
   );
 }
 
-export default Login
+export default Login;
